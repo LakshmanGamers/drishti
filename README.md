@@ -16,4 +16,5 @@
 
 ## open website in chrome
   ```now the webpage will be automatically opened , if not search http://127.0.0.1:5501 in addresss bar in google chrome```
-![Screenshot (599)](https://user-images.githubusercontent.com/76223461/229142919-a84c28e5-123f-40a0-a738-4a221eed5d4c.png)
+
+![Screenshot (602)](https://user-images.githubusercontent.com/76223461/229143934-3f0185de-92d2-4da0-aa50-fcb85639d2e2.png)
