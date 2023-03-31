@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <video id="myAudio" width="320" height="240" controls autoplay>
+      <source src="history2.mp4" type="video/mp4" />
+      Your browser does not support the audio element.
+    </video>
+    <br />
+    <br /><br />
+    <div id="console"></div>
+    <p id="texter"></p>
+    >
+    <script>
+      function speak(message) {
+        var msg = new SpeechSynthesisUtterance(message);
+        var voices = window.speechSynthesis.getVoices();
+        msg.voice = voices[4];
+
+        window.speechSynthesis.speak(msg);
+      }
+      var aud = document.getElementById("myAudio");
+      aud.onended = function () {
+        speak(
+          "lets see some questions, question one Who was the first Prime Minister of India?, option one Indira Gandhi, option two Jawaharlal Nehru, option three Narendra Modi, option four Manmohan Singh, say the correct option "
+        );
+        window.location.href = "quiznew21.html";
+      };
+    </script>
+    <script src="audfile1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1 align="center">1. Who was the first Prime Minister of India?</h1>
+    <br />
+    <ol>
+      <li><b> Indira Gandhi </b></li>
+      <li><b> Jawaharlal Nehru </b></li>
+      <li><b> Narendra Modi </b></li>
+      <li><b> Manmohan Singh </b></li>
+    </ol>
+    <p id="pop">hello</p>
+    <br /><br />
+    <div id="console"></div>
+    <p id="result"></p>
+    <script src="quizspeech21.js"></script>
+    <script>
+      localStorage.clickcount = 0;
+    </script>
+  </body>
+</html>

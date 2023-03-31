@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 style="color: rgb(26, 19, 218)" align="center">QUIZ SCORE</h2>
+    <br />
+    <hr />
+    <br />
+    <h2 style="color: rgb(26, 19, 218)" align="center">your score</h2>
+    <br />
+    <p id="result" style="color: rgb(26, 19, 218)" align="center"></p>
+  </body>
+  <script>
+    document.getElementById("result").innerHTML = localStorage.clickcount;
+  </script>
+  <script>
+    var msg = new SpeechSynthesisUtterance(message);
+    var voices = window.speechSynthesis.getVoices();
+    msg.voice = voices[4];
+
+    window.speechSynthesis.speak(msg);
+    msg.onend = (event) => {
+      window.location.href = "index.html";
+    };
+  </script>
+</html>

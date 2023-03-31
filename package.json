@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "text-to-speech-offline": "^1.0.1"
+  }
+}

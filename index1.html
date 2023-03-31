@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PWA SIH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/speech-commands"></script>
+
+    <link rel="manifest" href="manifest.json" />
+    <style>
+      .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .button1 {background-color: #4CAF50;} /* Green */
+      .button2 {background-color: #4CAF50;} /* Green */
+      </style>
+  </head>
+  <style>
+    body {
+      background-image: "#welcome.jpg";
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+  <body >
+    <style>
+        #audio-switch{
+            display: none;
+          }
+      </style>
+    <main>
+      <br />
+      <hr />
+      <h2 style="color: rgb(26, 19, 218)" align="center">navigated to 1st page</h2>
+      <hr />
+      <br />
+      
+         
+            
+       
+        <input id="audio-switch" disabled="disabled">
+        
+       </label>
+
+          <div class="col-md-4 col-6 mt-2"></div>
+        </div>
+   
+        <div class="row mt-2">
+          <div class="col-12">
+            <div
+              class="progress progress-bar progress-bar-striped progress-bar-animated col-md-10 col-sm-8 col-8 d-none"
+            >
+             
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </main>
+     <button class="button button1" align="center">Say One For english</button>
+    <br>
+    <button class="button button2" align="center">Say Two For history</button>
+    <script>
+      document.getElementById("audio-switch").checked = true;
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
+    <p id="hi">hello</p>
+    <script src="speech_command1.js"></script>
+  </body>
+</html>
